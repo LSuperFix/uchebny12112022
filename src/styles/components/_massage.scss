@@ -1,0 +1,24 @@
+.massage-conteyner {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: $main-background;
+  border: 1px solid $main;
+  padding: 5px 45px 5px 45px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  color: $main;
+}
+
+.massage-conteyner__textblock {
+  width: 80%;
+}
+
+.massage-conteyner__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.massage-conteyner__text {
+  font-size: 16px;
+}

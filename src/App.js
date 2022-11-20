@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import Massageblock from "./components/Massageblock";
+import "./styles/Main.scss"
 function App() {
+
+  const [massages, setMassages] = useState([
+    {id:1, title:"Задание менеджерам", text:"Обработать 30 предприятий, разослать им предложения"},
+    {id:2, title:"Задание дизайнеру", text:"Обработать 30 предприятий, разослать им предложения"},
+    {id:3, title:"Задание руководителю проекта", text:"Обработать 30 предприятий, разослать им предложения"},
+  ])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Massageblock massages = {massages} />
     </div>
   );
 }
