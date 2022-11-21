@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-        <Massageblock massages = {massages} />
+        <Massageblock massages = {massages} setMassages = {setMassages} />
     </div>
   );
 }
